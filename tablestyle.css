@@ -1,0 +1,172 @@
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+    background: #000000;
+}
+
+@keyframes colorChange2 {
+from { color: rgb(255, 255, 255); }
+to {color: rgb(138, 226, 200);}
+
+}
+
+.main_section{
+    background: #000;
+    display: grid; 
+    width: 50%;
+    color: white;
+    align-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px rgb(138, 226, 200), 4px 4px 4px rgb(149, 210, 235), 0px 0px 20px rgb(255, 255, 255);
+    animation-name: colorChange2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.main_section th{
+    background-color: rgb(4, 39, 104);
+    text-align: center;
+    width: fit-content;
+    height: 30px;
+    
+}
+
+@keyframes colorChange {
+from { color: rgb(255, 255, 255); }
+to {color: #000;}
+
+}
+
+
+.main_section caption{
+    font-size: larger;
+    font-family: sans-serif;
+    padding-bottom: 7px;
+    animation-name: colorChange;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes colorChange_th {
+from{color: white;}
+to{color: rgb(0, 0, 0);}
+}
+
+.main_section th{
+    animation-name:colorChange_th;
+    animation-duration: 7s;
+    animation-iteration-count: 2s infinite alternate ease-in-out;
+}
+.main_section th,td{
+    text-align: center;
+    border: 1px solid grey;
+    padding: 5px;
+
+}
+
+.main_section td:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+
+.box {
+    background: #000;
+    display: grid; 
+    width: 50%;
+    color: white;
+    align-content: center;
+    padding: 30px;
+    border-radius: 10px;    
+    margin: 50px auto;
+    animation: shadowPulse 2s infinite alternate ease-in-out;
+  }
+
+  /* Keyframes for box-shadow animation */
+  @keyframes shadowPulse {
+    from {
+      box-shadow: 0 0 3px rgba(18, 4, 214, 0.3);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+
+  }
+
+  .box th{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+
+  }
+
+  .box td:hover{
+    background-color: blue;
+  }
+
+@keyframes colorchange_Header {
+  from{color: rgb(19, 7, 77);}
+  to{color: rgb(255, 255, 255);}
+}
+
+  header{
+    color: aquamarine;
+    animation-name: colorchange_Header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .box_calendar {
+    background: #000;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:fit-content;
+    color: white;
+    align-content: center;
+    padding: 25px;
+    border-radius: 0px;    
+    margin: 20px auto;
+    animation: shadowPulse 2s infinite alternate ease-in-out;
+  }
+.box_calendar td:hover{
+  background-color: rgb(3, 13, 102);
+  color: #ffffff;
+
+}
+  .box_calendar table{
+    margin: 5px;
+
+  }
+
+  .box_calendar caption{
+    font-size: larger;
+    font-family: sans-serif;
+    padding-bottom: 7px;
+    animation-name: colorChange;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+}
+
+.sunday{
+  color: red;
+}
+.holiday{
+  background-color: red;
+  color: white;
+  animation: shadowHoliday 2s infinite alternate ease-in-out;
+}
+
+ @keyframes shadowHoliday {
+    from {
+      box-shadow: 0 0 3px rgba(221, 0, 0, 0.3);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+
+  }

@@ -131,6 +131,7 @@ to{color: rgb(0, 0, 0);}
     border-radius: 0px;    
     margin: 20px auto;
     animation: shadowPulse 2s infinite alternate ease-in-out;
+    border-radius: 20px;
   }
 .box_calendar td:hover{
   background-color: rgb(3, 13, 102);
